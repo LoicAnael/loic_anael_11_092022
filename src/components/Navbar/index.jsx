@@ -20,10 +20,10 @@ const NavbarContainer = styled.ul`
 function Navbar() {
   return (
     <NavbarContainer>
-      <NavLink to="/" exact activeClassName="active">
+      <NavLink to="/" end activeclassname="active">
         <li>Accueil</li>
       </NavLink>
-      <NavLink to="/a-propos" exact activeClassName="active">
+      <NavLink to="/a-propos" end activeclassname="active">
         <li>A propos</li>
       </NavLink>
     </NavbarContainer>
