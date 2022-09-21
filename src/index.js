@@ -4,6 +4,7 @@ import './index.css'
 import Home from './pages/Home'
 import reportWebVitals from './reportWebVitals'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -12,6 +13,7 @@ root.render(
     <Router>
       <Header />
       <Home />
+      <Footer />
     </Router>
   </React.StrictMode>
 )
