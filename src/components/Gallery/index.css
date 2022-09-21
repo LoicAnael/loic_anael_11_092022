@@ -1,6 +1,6 @@
 .CardsContainer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #f6f6f6;
   border-radius: 30px;
   margin-top: 30px;
@@ -8,4 +8,10 @@
   padding-right: 10px;
   padding-top: 40px;
   border-radius: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .CardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+  }
 }

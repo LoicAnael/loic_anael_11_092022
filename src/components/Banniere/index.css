@@ -1,0 +1,13 @@
+.bannerTitle {
+  font-size: 24px;
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerTitle {
+    font-size: 24px;
+  }
+}

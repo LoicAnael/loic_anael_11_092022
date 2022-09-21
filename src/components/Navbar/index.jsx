@@ -2,16 +2,21 @@ import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 const NavbarContainer = styled.ul`
-  gap: 100px;
+  gap: 40%;
   height: 34px;
   display: flex;
+  width: 40%;
+  justify-content: flex-end;
   a {
     text-decoration: none;
   }
   li {
     list-style: none;
     color: #ff6060;
+    width: fit-content;
+    white-space: nowrap;
   }
+
   .active li {
     border-bottom: 2px solid #ff6060;
   }

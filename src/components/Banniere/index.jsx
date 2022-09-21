@@ -1,5 +1,6 @@
 import banniere from '../../assets/banniere.png'
 import styled from 'styled-components'
+import './index.css'
 
 const BanniereWrapper = styled.div`
   display: flex;
@@ -18,18 +19,12 @@ const BanniereImage = styled.img`
   height: 100%;
   object-fit: cover;
 `
-const BanniereTitle = styled.h1`
-  position: absolute;
-  color: white;
-  font-size: 48px;
-  font-weight: 500;
-`
 
 function Banniere() {
   return (
     <BanniereWrapper>
       <BanniereImage src={banniere} alt="banniere kasa" />
-      <BanniereTitle>Chez vous, partout et ailleurs</BanniereTitle>
+      <h1 className="bannerTitle">Chez vous, partout et ailleurs</h1>
     </BanniereWrapper>
   )
 }
