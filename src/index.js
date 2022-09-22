@@ -5,14 +5,18 @@ import Home from './pages/Home'
 import reportWebVitals from './reportWebVitals'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import NotFound from './pages/Error'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </Router>
   </React.StrictMode>
