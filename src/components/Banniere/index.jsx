@@ -1,6 +1,6 @@
 import banniere from '../../assets/banniere.png'
 import styled from 'styled-components'
-import './index.css'
+import './banner.css'
 
 const BanniereWrapper = styled.div`
   display: flex;

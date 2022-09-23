@@ -1,0 +1,46 @@
+.AProposContainer {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.DropdownContainer {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+.DropdownWrapper {
+  border-radius: 5px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.DropdownHeader {
+  background-color: #ff6060;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.DropdownTitle {
+  color: #ffffff;
+  height: 40px;
+  background-color: #ff6060;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.DropdownHeader a {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.DropdownContent {
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  color: #ff6060;
+  min-height: 100px;
+  padding: 25px 10px 10px 10px;
+}
