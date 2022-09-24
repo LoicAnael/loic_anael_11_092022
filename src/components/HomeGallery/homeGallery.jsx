@@ -1,11 +1,10 @@
-import Card from '../../components/Card'
+import Card from '../Card/card.jsx'
 import { NavLink } from 'react-router-dom'
-import './index.css'
+import './homeGallery.css'
 import { useEffect, useState } from 'react'
 
 function Gallery() {
   const [logements, setLogement] = useState([])
-
   useEffect(() => {
     fetch('../../data/logements.json')
       .then((rep) => rep.json())

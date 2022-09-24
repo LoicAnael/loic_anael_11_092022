@@ -2,8 +2,8 @@ import './about.css'
 import AboutData from './Aboutdata'
 import React, { useState } from 'react'
 import fleche from '../../assets/FlecheDropdown.svg'
-import '../../components/Banniere/banner.css'
-import Banniere from '../../components/Banniere'
+import '../../components/Banner/banner.css'
+import Banniere from '../../components/Banner/banner.jsx'
 import styled from 'styled-components'
 
 const ArrowStyle = styled.a`

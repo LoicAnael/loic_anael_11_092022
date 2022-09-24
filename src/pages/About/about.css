@@ -7,6 +7,12 @@
   padding-right: 50px;
   margin-top: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .DropdownContainer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .DropdownWrapper {
   border-radius: 5px;
   margin-bottom: 35px;
