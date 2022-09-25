@@ -8,6 +8,7 @@ import Footer from './components/Footer/footer.jsx'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import NotFound from './pages/Error/error.jsx'
 import About from './pages/About/about.jsx'
+import Details from './pages/Property/property.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -16,6 +17,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/logement/:id" element={<Details />} />
         <Route path="/a-propos" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -1,0 +1,60 @@
+.galleryWrapper {
+  display: block;
+  height: 255px;
+  margin: auto auto 30px auto;
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .galleryWrapper {
+    margin: auto auto 15px auto;
+  }
+}
+
+.galleryFlGauche {
+  position: absolute;
+  width: 25px;
+  z-index: 1;
+  margin-left: 25px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.galleryFlGauche:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+@media screen and (max-width: 768px) {
+  .galleryFlGauche {
+    width: 15px;
+    margin-left: 5px;
+  }
+}
+.galleryFlDroite {
+  position: absolute;
+  width: 25px;
+  z-index: 1;
+  margin-right: 25px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.galleryFlDroite:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+@media screen and (max-width: 768px) {
+  .galleryFlDroite {
+    width: 15px;
+    margin-right: 5px;
+  }
+}
+.GalleryImage {
+  border-radius: 15px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
