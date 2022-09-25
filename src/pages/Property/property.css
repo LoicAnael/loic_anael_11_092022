@@ -3,3 +3,60 @@
   padding-right: 5%;
   margin-top: 40px;
 }
+.LogementWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.LogementInfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border: 1px solid red;
+  color: #ff6060;
+}
+.LogementTitre {
+  font-size: 36px;
+}
+.LogementLocation {
+  font-size: 18px;
+}
+.TagsLogement {
+  background-color: #ff6060;
+  border-radius: 10px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  margin: 20px 10px;
+  min-width: 115px;
+  padding: 5px 15px;
+  text-align: center;
+}
+.TagsLogement:first-of-type {
+  margin-left: 0;
+}
+
+.HostWrapper {
+  border: 1px solid red;
+  width: 40%;
+  height: fit-content;
+}
+.HostInfo {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.HostName {
+  font-size: 18px;
+  margin-right: 10px;
+  text-align: right;
+  width: 73px;
+  color: #ff6060;
+}
+.HostPicture {
+  border-radius: 50%;
+  height: 64px;
+  object-fit: cover;
+  width: 64px;
+}
