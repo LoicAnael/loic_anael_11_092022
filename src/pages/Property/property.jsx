@@ -2,6 +2,8 @@ import Gallery from '../../components/Gallery/gallery'
 import ListeLogements from '../../data/logements.json'
 import { useParams } from 'react-router-dom'
 import './property.css'
+import EtoilePleine from '../../assets/Etoile.png'
+import EtoileVide from '../../assets/EtoileVide.png'
 
 function Details() {
   const getId = useParams()
@@ -16,6 +18,19 @@ function Details() {
       </span>
     )
   })
+  // Notes
+  let noteLogement = []
+  let etoileComplete = true
+  for (let index = 0; index < 5; index++) {
+    index === parseInt(ficheLogement?.rating) && (etoileComplete = false)
+
+    if (etoileComplete === true) {
+      noteLogement.push(<img key={index} src={EtoilePleine} alt="etoiles" />)
+    } else {
+      noteLogement.push(<img key={index} src={EtoileVide} alt="etoiles" />)
+    }
+  }
+
   return (
     <div className="LogementContainer">
       <Gallery images={ficheLogement?.pictures} />
@@ -34,6 +49,7 @@ function Details() {
               alt="host pic"
             />
           </div>
+          <div className="HostNote">{noteLogement}</div>
         </div>
       </section>
     </div>

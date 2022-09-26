@@ -14,7 +14,9 @@
   margin-bottom: 40px;
   border: 1px solid red;
   color: #ff6060;
+  width: 60%;
 }
+
 .LogementTitre {
   font-size: 36px;
 }
@@ -42,7 +44,7 @@
   height: fit-content;
 }
 .HostInfo {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -59,4 +61,13 @@
   height: 64px;
   object-fit: cover;
   width: 64px;
+}
+.HostNote {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid blue;
+}
+.HostNote img {
+  height: 30px;
+  width: 30px;
 }
