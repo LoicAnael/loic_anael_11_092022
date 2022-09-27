@@ -6,15 +6,10 @@
   padding-left: 50px;
   padding-right: 50px;
   margin-top: 30px;
-  min-height: 60vh;
+  min-height: 55vh;
   margin-bottom: 20px;
 }
-@media only screen and (max-width: 768px) {
-  .DropdownContainer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
+
 .DropdownWrapper {
   border-radius: 10px;
   margin-bottom: 35px;
@@ -50,4 +45,25 @@
   color: #ff6060;
   min-height: 100px;
   padding: 25px 10px 10px 10px;
+}
+@media only screen and (max-width: 768px) {
+  .DropdownContainer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .DropdownHeader {
+    height: 30px;
+  }
+  .DropdownTitle {
+    font-size: 13px;
+  }
+  .DropdownHeader a img {
+    width: 9px;
+    height: 15px;
+  }
+  .DropdownContent {
+    font-size: 12px;
+    font-weight: 400;
+    min-height: 70px;
+  }
 }

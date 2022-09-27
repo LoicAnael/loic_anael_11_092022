@@ -2,6 +2,7 @@
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 40px;
+  min-height: 75vh;
 }
 .LogementWrapper {
   display: flex;
@@ -13,7 +14,6 @@
   justify-content: space-between;
   margin-bottom: 20px;
   color: #ff6060;
-  width: 60%;
 }
 
 .LogementTitre {
@@ -63,10 +63,14 @@
 .HostNote {
   display: flex;
   justify-content: flex-end;
+  order: 1;
 }
 .HostNote img {
   height: 30px;
   width: 30px;
+}
+section .CollapseFrame li {
+  list-style: none;
 }
 @media only screen and (min-width: 768px) {
   .ItemsWrapper {
@@ -78,6 +82,46 @@
     width: 45%;
   }
 }
-section .CollapseFrame li {
-  list-style: none;
+@media only screen and (max-width: 768px) {
+  .LogementWrapper {
+    flex-direction: column;
+  }
+  .LogementTitre {
+    font-size: 18px;
+  }
+  .LogementLocation {
+    font-size: 14px;
+  }
+  .TagsLogement {
+    font-size: 10px;
+    padding: 1.5% 0.5%;
+    min-width: 25%;
+    margin: 5px 10px;
+  }
+  .LogementInfos {
+    margin-bottom: 0;
+  }
+  .HostWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .HostInfo {
+    order: 2;
+    margin-bottom: unset;
+  }
+  .HostName {
+    font-size: 12px;
+    width: 50px;
+  }
+  .HostNote img {
+    height: 15px;
+    width: 15px;
+  }
+  .HostPicture {
+    height: 32px;
+    width: 32px;
+  }
 }
