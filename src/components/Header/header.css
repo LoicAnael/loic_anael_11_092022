@@ -5,3 +5,9 @@
   height: 68px;
   margin: 40px;
 }
+@media screen and (max-width: 768px) {
+  .HeaderWrapper img {
+    height: 47px;
+    width: 145px;
+  }
+}

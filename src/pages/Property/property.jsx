@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import './property.css'
 import EtoilePleine from '../../assets/Etoile.png'
 import EtoileVide from '../../assets/EtoileVide.png'
+import Collapse from '../../components/Collapse/collapse.jsx'
 
 function Details() {
   const getId = useParams()
@@ -30,6 +31,12 @@ function Details() {
       noteLogement.push(<img key={index} src={EtoileVide} alt="etoiles" />)
     }
   }
+  //Équipements
+  const equipementsLogement = ficheLogement?.equipments.map(
+    (equipment, index) => {
+      return <li key={index}>{equipment}</li>
+    }
+  )
 
   return (
     <div className="LogementContainer">
@@ -50,6 +57,21 @@ function Details() {
             />
           </div>
           <div className="HostNote">{noteLogement}</div>
+        </div>
+      </section>
+
+      <section className="ItemsWrapper">
+        <div className="CollapseFrame">
+          <Collapse
+            title="Description"
+            description={ficheLogement?.description}
+          ></Collapse>
+        </div>
+        <div className="CollapseFrame">
+          <Collapse
+            title="Equipements"
+            description={equipementsLogement}
+          ></Collapse>
         </div>
       </section>
     </div>

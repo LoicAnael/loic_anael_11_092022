@@ -5,6 +5,11 @@
   width: 40%;
   justify-content: flex-end;
 }
+@media screen and (max-width: 768px) {
+  .NavbarContainer {
+    gap: 20%;
+  }
+}
 .NavbarContainer a {
   text-decoration: none;
 }
