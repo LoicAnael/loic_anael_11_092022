@@ -9,11 +9,21 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import NotFound from './pages/Error/error.jsx'
 import About from './pages/About/about.jsx'
 import Details from './pages/Property/property.jsx'
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}`
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <Router>
+      <GlobalStyle />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
