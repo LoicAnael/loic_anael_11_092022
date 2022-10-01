@@ -9,20 +9,20 @@ const ArrowStyle = styled.a`
   }
 `
 function Collapse({ title, description }) {
-  const [dropdown, setDropdown] = useState(false)
+  const [isOpenDropdown, setDropdown] = useState(false)
 
   return (
-    <div className="DropdownWrapper" id={`dropdown-${title}`}>
+    <div className="DropdownWrapper">
       <div className="DropdownHeader">
         <div className="DropdownTitle">{title}</div>
         <ArrowStyle
-          className={`${dropdown}`}
-          onClick={() => setDropdown(!dropdown)}
+          className={`${isOpenDropdown}`}
+          onClick={() => setDropdown(!isOpenDropdown)}
         >
           <img src={fleche} alt="Ouvrir" />
         </ArrowStyle>
       </div>
-      {dropdown && <div className="DropdownContent">{description}</div>}
+      {isOpenDropdown && <div className="DropdownContent">{description}</div>}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 .galleryWrapper {
   display: block;
-  height: 255px;
+  height: 415px;
   margin: auto auto 30px auto;
   position: relative;
   width: 100%;
@@ -8,6 +8,7 @@
 @media screen and (max-width: 768px) {
   .galleryWrapper {
     margin: auto auto 15px auto;
+    height: 255px;
   }
 }
 
@@ -50,9 +51,12 @@
     width: 15px;
     margin-right: 5px;
   }
+  .GalleryImage {
+    border-radius: 10px;
+  }
 }
 .GalleryImage {
-  border-radius: 15px;
+  border-radius: 25px;
   height: 100%;
   object-fit: cover;
   width: 100%;

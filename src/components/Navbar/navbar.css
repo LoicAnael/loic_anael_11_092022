@@ -4,11 +4,7 @@
   display: flex;
   width: 40%;
   justify-content: flex-end;
-}
-@media screen and (max-width: 768px) {
-  .NavbarContainer {
-    gap: 20%;
-  }
+  align-items: center;
 }
 .NavbarContainer a {
   text-decoration: none;
@@ -22,4 +18,13 @@
 
 .NavbarContainer .active li {
   border-bottom: 2px solid #ff6060;
+}
+
+@media screen and (max-width: 768px) {
+  .NavbarContainer {
+    gap: 20%;
+  }
+  .NavbarContainer li {
+    text-transform: uppercase;
+  }
 }
