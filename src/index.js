@@ -1,16 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Home from './pages/Home/home.jsx'
 import reportWebVitals from './reportWebVitals'
 import Header from './components/Header/header.jsx'
 import Footer from './components/Footer/footer.jsx'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import NotFound from './pages/Error/error.jsx'
-import About from './pages/About/about.jsx'
-import Details from './pages/Property/property.jsx'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { createGlobalStyle } from 'styled-components'
-
+import CreateRoutes from './routes'
 const GlobalStyle = createGlobalStyle`
 * {
   font-family: 'Montserrat', sans-serif;
@@ -25,12 +21,7 @@ root.render(
     <Router>
       <GlobalStyle />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/logement/:id" element={<Details />} />
-        <Route path="/a-propos" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <CreateRoutes />
       <Footer />
     </Router>
   </React.StrictMode>
